@@ -8,6 +8,7 @@ body{
     width: 100%;
     background: white;
     position: relative;
+    display: flex;
 }
 #menu{
     background-color: #2A2b33;
@@ -29,4 +30,60 @@ body{
 }
 #menu .items li{
     list-style: none;
+    padding: 15px 0;
+    transition: 0.3s ease;
+}
+#menu .items li:hover{
+background: #253047;
+   cursor: pointer;
+}
+#menu .items li:nth-child(1){
+    border-left: 4px solid #fff;
+}
+#menu .items li i{
+    color: rgb(134, 131, 151);
+    width:30px;
+    height:20px;
+    line-height: 30x;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 14px 0 25px;
+}
+#menu .items li:hover i,
+#menu .items li:hover a
+{
+    color: #f3f4f6;
+}
+#menu .items li a{
+   text-decoration: none;
+   color:rgb(134, 141, 151);
+   font-weight: 300px;
+   transition: 0.3s ease;
+}
+
+
+#interface{
+    width:cal(100% - 300px)
+}
+#interface .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding:30px 15px;
+    border-bottom: 3px solid #1b1e2b;
+}
+#interface .navigation .profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#interface .navigation .profile i{
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+#interface .navigation .profile img{
+    width: 30px;
+    height:30px;
 }
