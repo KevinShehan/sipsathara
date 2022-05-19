@@ -3,7 +3,7 @@
 Steps: 
 
 1) Create a folder named "backend".
-2) Open the folder thruogh VSCode
+2) Open the folder in VSCode
 3) Run the following code in the terminal
 
 
