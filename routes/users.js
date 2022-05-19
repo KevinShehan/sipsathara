@@ -44,7 +44,7 @@ router.post('/login', async (req, res) => {
 
         if (document && document.exists) {
             let data = document.data();
-            if (data.password === md5(password)) res.send({ success: "success", data: { id: data.id, userRole: data.userRole } });
+            if (data.password === md5(password)) res.send({ success: true, data: { id: data.id, userRole: data.userRole } });
             else {
                 res.send({ success: false, message: "Invalid password" })
             }
